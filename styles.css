@@ -1,0 +1,395 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+:root {
+	--cor-de-fundo: #FFFFFF;
+	--cor-de-fundo-rodape: #F9FAFB;
+	--cor-branca: #FFFFFF;	
+	--cor-cinza-claro: #667085;
+	--cor-cinza-mais-claro: #98A2B3;
+	--cor-cinza-escuro: #101828;
+	--cor-logo: #3A404E;
+	--cor-vinho: #8E2424;
+	--cor-cinza-borda: #EAECF0;
+	--cor-borda-campo: #D0D5DD;
+	--cor-de-fundo-vinho: rgba(142, 36, 36, 0.05);;
+	--fonte-principal: "Inter";	
+}
+
+body {
+	background-color: var(--cor-de-fundo);
+	color: var(--cor-cinza-claro);
+	font-family: var(--fonte-principal);
+	font-size: 16px;
+	font-weight: 500;
+}
+
+.cabecalho {
+	margin: 28px 112px;	
+}
+
+.cabecalho_barra_navegacao {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content:space-between;
+	align-items: center;
+	line-height: 24px;
+}
+
+.cabecalho_logo {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-right: 16px;
+}
+
+.cabecalho_logo--descricao {
+	margin-left: 8px; 
+	font-size: 16px;
+	color: var(--cor-logo);
+}
+
+.cabecalho_menu {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;	
+	width: 50%;
+}
+
+.cabecalho_link {
+	text-decoration: none;
+	margin-right: 32px;
+	color: var(--cor-cinza-claro);
+}
+
+.cabecalho_botoes {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.botao {
+	text-decoration: none;
+	color: var(--cor-cinza-claro);
+	background-color: var(--cor-de-fundo);
+	padding: 10px 18px;
+	margin-left: 10px;
+}
+
+.botao:hover {
+	cursor: pointer;
+}
+
+.botao--destaque {
+	color: var(--cor-branca);
+	background-color: var(--cor-vinho);
+	border: 1px solid var(--cor-vinho);
+	border-radius: 8px;
+}
+
+@media screen and (max-width: 1000px) {
+	.cabecalho {
+		margin: 28px 40px;
+	}
+	.cabecalho_menu {
+		width: auto;
+	}	
+}
+
+
+.secao_sobre {
+	text-align: center;
+	padding: 96px 112px 100px 112px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.secao_sobre_destaque {
+	color: var(--cor-vinho);
+	font-weight: 600;
+}
+
+.secao_sobre_titulo {
+	font-size: 48px;
+	color: var(--cor-cinza-escuro);
+	margin-top: 24px;
+	font-weight: 600;
+}
+
+.secao_sobre_descricao {
+	margin-top: 36px;
+	max-width: 1000px;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+@media screen and (max-width: 1000px) {
+	.secao_sobre {
+		padding: 96px 40px 100px 40px;
+	}
+}
+
+
+.secao_totais {
+	margin: 0px 80px 80px 112px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.card_totais {
+	margin-right: 32px;
+}
+
+.card_totais--total {
+	color: var(--cor-vinho);
+	font-weight: 600;
+	font-size: 60px;
+	margin-bottom: 12px;
+}
+
+.card_totais--titulo {
+	color: var(--cor-cinza-escuro);
+	font-weight: 500;
+	font-size: 18px;
+	margin-bottom: 8px;
+}
+
+.card_totais--descricao {
+	font-weight: 400;
+}
+
+@media screen and (max-width: 1000px) {
+	.secao_totais {
+		margin: 0px 40px;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.card_totais {
+		margin-top: 16px;
+	}
+
+	.card_totais {
+		width: 40%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.secao_totais {
+		justify-content: flex-start;
+	}
+
+	.card_totais {
+		width: auto;
+	}
+}
+
+
+.secao_vagas {	
+	text-align: center;
+	margin: 96px 112px 100px 112px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.secao_vagas--abertas {
+	font-size: 14px;
+	color: var(--cor-vinho);
+	font-weight: 500;
+	background: var(--cor-de-fundo-vinho);
+	padding: 4px 12px;
+	border-radius: 16px;
+	margin-bottom: 16px;
+}
+
+.secao_vagas--titulo {
+	font-weight: 600;
+	font-size: 36px;
+	color: var(--cor-cinza-escuro);
+	margin-bottom: 20px;
+}
+
+.secao_vagas--descricao {
+	font-weight: 400;
+	font-size: 20px;
+	margin-bottom: 64px;
+}
+
+.secao_vagas--banner {
+	width: 100%;
+	margin-bottom: 24px;
+}
+
+.secao_vagas--categoria {
+	text-align: left;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.vagas_titulo {
+	width:60%;
+	font-weight: 500;
+	font-size: 20px;
+	color: var(--cor-cinza-escuro);
+	margin-top: 40px;
+	margin-bottom: 32px;
+}
+
+.vagas_lista {
+	width: 60%;
+}
+
+.card_vagas {
+	border: 1px solid var(--cor-cinza-borda);
+	border-radius: 8px;
+	padding: 24px;
+	margin-bottom: 24px;	
+}
+
+.card_vagas--titulo {
+	font-weight: 500;
+	font-size: 18px;
+	color: var(--cor-cinza-escuro);
+	margin-bottom: 32px;
+}
+
+.card_vagas--descricao {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+
+.card_vagas--tempo {
+	margin-right: 24px;
+}
+
+@media screen and (max-width: 1000px) {
+	.secao_vagas {
+		margin: 48px 40px 50px 40px;
+	}	
+}
+
+@media screen and (max-width: 800px) {
+	.vagas_titulo, .vagas_lista {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.secao_vagas--banner {
+		display: none;
+	}
+}
+
+.secao_testemunho {
+	background: var(--cor-de-fundo-vinho);
+	margin: 96px 112px 100px 112px;
+	padding: 64px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.secao_testemunho--titulo {
+	font-size: 14px;
+	color: var(--cor-vinho);
+	font-weight: 600;
+}
+
+.secao_testemunho--texto {
+	font-size: 36px;
+	color: var(--cor-cinza-escuro);
+	font-weight: 500;
+	margin-top: 16px;
+}
+
+.secao_testemunho--foto {
+	margin-top: 32px;
+}
+
+.secao_testemunho--nome {
+	margin-top: 16px;
+	color: var(--cor-cinza-escuro);
+}
+
+.secao_testemunho--cargo {
+	margin-top: 16px;
+	font-weight: 400;
+	font-size: 14px;
+}
+
+@media screen and (max-width: 1000px) {
+	.secao_testemunho {
+		margin: 48px 40px 50px 40px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.secao_testemunho--texto {
+		font-size: 16px;
+	}
+}
+
+.rodape {
+	background: var(--cor-de-fundo-rodape);
+	margin: 96px 0px 0px 0px;
+	padding: 96px 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+}
+
+.rodape_titulo {
+	font-size: 36px;
+	color: var(--cor-cinza-escuro);
+	font-weight: 600;
+}
+
+.rodape_descricao {
+	font-size: 20px;
+	font-weight: 400;
+	margin-top: 20px;
+}
+
+.rodape_form {
+	width: 100%;
+	margin-top: 40px;
+}
+
+.campo {
+	min-width: 360px;
+	padding: 12px 14px 12px 16px;
+	color: var(--cor-cinza-claro);
+	background-color: var(--cor-branca);
+	border: 1px solid var(--cor-borda-campo);
+	border-radius: 8px;
+}
+
+.rodape_copyright {
+	margin-top: 32px;
+	font-weight: 400;
+	color: var(--cor-cinza-mais-claro);
+}
+
+@media screen and (max-width: 480px) {
+	.rodape_titulo {
+		font-size: 26px;
+	}
+
+	.rodape_descricao {
+		font-size: 16px;
+	}
+
+	.campo {
+		min-width: 200px;
+	}
+}
